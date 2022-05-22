@@ -21,12 +21,12 @@ def prepare():
         pass
 
     # setup the config of the logger
-    log.basicConfig(
-        filename='logs/runtime.log',
-        encoding='utf-8',
-        format='%(levelname)s | %(asctime)s | %(filename)s:%(lineno)s | %(funcName)s() | %(message)s',
-        datefmt='%Y/%m/%d | %H:%M:%S',
-        level='INFO')
+    # log.basicConfig(
+    #     filename='logs/runtime.log',
+    #     encoding='utf-8',
+    #     format='%(levelname)s | %(asctime)s | %(filename)s:%(lineno)s | %(funcName)s() | %(message)s',
+    #     datefmt='%Y/%m/%d | %H:%M:%S',
+    #     level='INFO')
     log.info("Logger setup finished")
 
 if __name__ == "__main__":
