@@ -2,11 +2,13 @@ import logging as log
 from os import mkdir
 
 import src.exercises.project1 as prj1
+import src.exercises.project3 as prj3
 
 def main():
-    prj1.task1()
+    #prj1.task1()
     # prj1.task2()
     # prj1.task3()
+    prj3.task1()
 
 
 def prepare():
