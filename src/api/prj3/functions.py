@@ -61,7 +61,7 @@ def print_node_set(S,d,p):
 
 def node_with_smallest_d(S,d):
     min_distance = float('inf')
-    node = None
+    node = 0
     for i, temp_distance in enumerate(d):
         if i not in S:
             if min_distance > temp_distance:
