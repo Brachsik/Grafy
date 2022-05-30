@@ -167,7 +167,7 @@ class Graph:
             self.generate_random_graph(nodes_number)
 
     def add_random_weight(self):
-        self.weight= [random.randint(1,10) for i in range(len(self.edges))]
+        self.weight= [random.randint(-5,10) for i in range(len(self.edges))]
 
     def draw_graph_with_weight(self):
         G = nx.Graph()
@@ -412,6 +412,8 @@ class Graph:
     def johnson(self):
         g_, begin = self.add_S()
         bell_dist = g_.bellman_ford(begin.number)
+        if(not bell_dist):
+            return False
         p = [0] * len(self.nodes)
         for node in g_.nodes:
             for neighbour in node.neighbours:
