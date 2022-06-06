@@ -4,6 +4,8 @@ from os import mkdir
 
 import src.exercises.project1 as prj1
 import src.exercises.project2 as prj2
+import src.exercises.project6 as prj6
+from src.exercises.project6 import alpha_to_adjacency_list
 
 def main():
     args = sys.argv[1:]
@@ -18,7 +20,14 @@ def main():
     # prj2.task3()
     # prj2.task4()
     # prj2.task5()
-    prj2.task6()
+    #prj2.task6()
+    #prj6.example01a()
+    #prj6.example01b()
+    prj6.example02inputdata()
+    #prj6.example02random2Dgraph()
+    
+   
+
 
 
 
